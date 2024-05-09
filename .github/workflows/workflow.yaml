@@ -1,6 +1,6 @@
 name: Workflow
 
-on: [ push ]
+on: [ pull_request ]
 
 jobs:
   deploy:
@@ -8,5 +8,5 @@ jobs:
       steps:
         - name: workflow
           run: |
-            printf 'Running a workflow'
+            printf 'This should not run'
           shell: bash
